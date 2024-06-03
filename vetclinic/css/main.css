@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+* h2 {
+    font-family: 'Helvetica', sans-serif;
+}
+* p {
+    font-family: "Raleway", sans-serif;
+}
+
+/* Header + nav + phone */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #C0E3E5;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.navigation {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.phone-number {
+    text-align: right;
+    color: #E84B46;
+}
+
+.phone-number i {
+    color: black; 
+}
+
+/* Naviationen */
+.primary-menu li a {
+    /* Gör länkarna uppercase */
+    text-transform: uppercase;
+    /* Sätt färgen till svart */
+    color: black;
+    /* Gör texten normal vikt (inte fet) */
+    font-weight: normal;
+    /* Ta bort understrykning från länkarna */
+    text-decoration: none;
+    /* Lägg till lite utrymme mellan länkarna */
+    margin-right: 30px;
+}
+
+.primary-menu li a:hover {
+    /* Gör länkarna feta vid hover */
+    font-weight: bold;
+}
+
+/* Banner */
+.banner img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    max-width: 100vw;
+    margin: 0 auto;
+}
+.banner {
+    position: relative;
+    overflow: hidden; 
+    text-align: center; 
+    background-color: #C0E3E5;
+}
+
+/* Banner innehåll (titel, text, knapp) */
+.banner-content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left; 
+    color: #000;
+}
+
+.banner-content h2 {
+    margin-bottom: 10px; 
+    font-size: 3vw;
+}
+
+.banner-content p {
+    font-size: 1.8vw;
+    margin-bottom: 4%;
+}
+
+
+.banner-btn {
+    font-family: 'Helvetica', sans-serif;
+    display: inline-block;
+    padding: 15px 40px; 
+    background-color: #E84B46; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+/* Footer */
+.site-footer {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    width: 50%;
+}
+
+/* Google Map styling */
+.footer-right iframe {
+    max-width: 100%;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+}
+
+.footer-left {   
+    padding-left: 10%;
+    text-align: left;
+}
+
+.footer-left p {   
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+hr {
+    border: 0; 
+    height: 1px; 
+    background-color: #C8C8C8; 
+    margin: 20px 0; 
+}
+
+/* Box-container för att hålla boxarna */
+.box-container {
+    margin: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Bild i varje box */
+.box img {
+    width: 20%;
+    display: block;
+    margin-right: 20px;
+    float: left;
+}
+
+/* Boxtitel */
+.box h2 {
+    margin-top: 8%;
+}
+
+/* Grå box */
+.gray-box {
+    background-color: #f0f0f0;
+}
+
+/* Blå box */
+.blue-box {
+    background-color: #C0E3E5;
+}
+
+/* CSS för att styla pil-ikonen */
+.icon {
+    font-size: 80px; 
+    color:#000; 
+    margin-top: 10px;
+    margin-left: 40%;
+}
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main content */
+.main-content {
+    width: 70%; /* Justera bredden för huvudinnehållet efter behov */
+    float: left;
+    padding: 20px;
+}
+
+.main-content h1 {
+    margin-top: 5%;
+    font-family: 'Helvetica', sans-serif; /* Använd sans-serif typsnitt för rubriker */
+}
+
+.main-content p {
+    margin-top: 1%;
+    font-family: 'Raleway', sans-serif; /* Använd Raleway för brödtext */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #C0E3E5;
+    border-radius: 5px; 
+    margin-top: 4%;
+    width: 30%; /* Justera bredden för sidofältet efter behov */
+    float: left;
+    padding: 20px;
+}
+
+.sidebar .widget {
+    margin-bottom: 20px; /* Lägg till utrymme mellan widgets */
+}
+
+.sidebar .widget-title {
+    font-family: 'Helvetica', sans-serif; /* Använd sans-serif typsnitt för widget-titlar */
+}
+
+.sidebar ul {
+    list-style: none; /* Ta bort punktlistor */
+    padding: 0; /* Ta bort marginaler */
+}
+
+.sidebar li {
+    margin-bottom: 10px; /* Lägg till utrymme mellan listelement */
+}
+
+/* Clearfix för att återställa layout */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Justera maximal bredd för behov */
+    margin: 0 auto;
+}
+
+/* Optional: Media Query för att göra layouten responsiv */
+@media (max-width: 768px) {
+    .main-content, .sidebar {
+        width: 100%; /* Vid mindre skärmar, ändra bredden till 100% för att stapla elementen */
+        float: none; /* Stoppa flytande layout på mindre skärmar */
+    }
+}
+
+.reviews {
+    background-color: #F1F1F1;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 2%;
+}
+
+.reviews h2{
+    font-size: 200%;
+}
+.reviews p{
+    font-size: 100%;
+    margin-top: 1%;
+    font-family: "Raleway", sans-serif;
+}
+
+.staff {
+    background-color: #C0E3E5;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 2%;
+}
+/* Enskild box */
+.box {
+    font-family: "Raleway", sans-serif;
+    width: 48%; 
+    border-radius: 5px; 
+    padding: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    position: relative; /* Lägg till position relativ */
+    padding: 5%;
+}
+
+/* Boxbeskrivning (initialt dold) */
+.box-description {
+    display: none;
+}
+
+/* Visa boxbeskrivning när musen sveps över boxen */
+.box:hover .box-description {
+    display: block;
+}
+/* Archive.php */
+.archive-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.archive-post {
+    margin-bottom: 30px;
+}
+
+.archive-post h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.archive-post .post-meta {
+    font-style: italic;
+    color: #888;
+}
+
+/* Search.php */
+.search-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.search-result {
+    margin-bottom: 30px;
+}
+
+.search-result h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.search-result .post-meta {
+    font-style: italic;
+    color: #888;
+}
+
+/* 404.php */
+.error-404 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.error-404 p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.error-404 a {
+    color: #E84B46;
+    text-decoration: none;
+}
+
+.error-404 a:hover {
+    text-decoration: underline;
+}
